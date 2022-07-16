@@ -1,11 +1,130 @@
-// 自定义内容样式
+// 写作自定义样式
+.red {
+  color: red;
+}
+
+.green {
+  color: #42b983;
+}
+
+// 历史遗留的样式（代码太丑了）
+
+.mysql-overview {
+  width: 50%;
+}
+
+.page .code-demo-wrapper .demo-wrapper {
+  max-height: 960px;
+}
+
+.tab-list > .tab-item {
+  padding: 1rem 2rem;
+
+  li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+
+    strong {
+      color: #42b983;
+    }
+  }
+}
+
+.design-item,
+.ul-item{
+  font-size: 1.1em;
+  margin: 0.5em 0 0.5em 20px;
+}
+
+.ul-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.em{
+  font-size: 1.5em;
+  color: red;
+}
+
+// 自定义三线表样式
+.ice-table{
+  text-align: center;
+  line-height: 1.5em;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  margin: 20px auto ;
+  caption{
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin: 10px auto;
+  }
+  thead {
+    border-bottom: 1px solid;
+  }
+  .left{
+    text-align: left;
+  }
+  .right{
+    text-align: right;
+  }
+}
+
+// 主题自定义内容样式
+
+// markdown blockquote
+blockquote {
+  font-size: 1rem;
+  color: #2c3e50;
+  border-left: .5rem solid #42b983;
+  background-color: #f3f5f7;
+  margin: 1rem 0;
+  padding: 1rem 0 1rem 1rem;
+
+  & > p {
+    margin: 0;
+  }
+}
+
+// 修改 TIP 容器外观颜色
+.custom-container.tip {
+  border-color: #4cb3d4;
+  background-color: #eef9fd;
+}
+
+// 图片居中
+p > img {
+  display: block;
+  margin: auto;
+}
+
+// 居中的三线表
+table {
+  display: table;
+  margin: 20px auto auto;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+
+  thead {
+    border-bottom: 1px solid;
+  }
+
+  tr, td, th {
+    background-color: white;
+    border: 0px;
+  }
+}
+
+// 修改左侧导航栏字体大小
+ul.sidebar-items{
+  font-size: 15px;
+}
+a.sidebar-item{
+  size: 0.95em;
+}
 
 
-
-
-
-
-// 自定义布局样式
+// 主题自定义布局样式
 .theme-default-content:not(.custom) {
   max-width: 100%;
   margin: 0 auto;
@@ -18,6 +137,7 @@
   padding: 55px 295px 15px 20rem;
   background: #f3f5f7;
 }
+
 .page-without-toc-sidebar {
   display: block;
   word-break: break-word;
