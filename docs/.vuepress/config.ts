@@ -7,6 +7,8 @@ import {registerComponentsPlugin} from "@vuepress/plugin-register-components";
 import {gitPlugin} from "@vuepress/plugin-git";
 import navbar from "./navbar";
 import getSidebar from "./sidebar";
+import {docsearchPlugin} from "@vuepress/plugin-docsearch";
+import copyrightPlugin from "vuepress-plugin-copyright2";
 
 export default defineUserConfig({
     lang: 'zh-CN',
@@ -71,6 +73,18 @@ export default defineUserConfig({
             createdTime: true,
             updatedTime: true,
             contributors: true,
+        }),
+        // docsearchPlugin({
+        //     apiKey:"",
+        //     indexName:"",
+        //     appId:"",
+        //     placeholder:"搜索文档"
+        // }),
+        copyrightPlugin({
+            hostname:"http://e-thunder.space",
+            author:"ice",
+            license: "MIT",
+            global: true
         }),
     ]
 })
