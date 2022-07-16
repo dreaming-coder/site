@@ -5,6 +5,7 @@ import mdEnhancePlugin from "vuepress-plugin-md-enhance";
 import clipboardPlugin from "vuepress-plugin-clipboard";
 import {registerComponentsPlugin} from "@vuepress/plugin-register-components";
 import {gitPlugin} from "@vuepress/plugin-git";
+import navbar from "./navbar";
 
 export default defineUserConfig({
     lang: 'zh-CN',
@@ -21,6 +22,7 @@ export default defineUserConfig({
         repo: 'dreaming-coder', // 此博客代码仓库地址
         colorMode: 'light',
         colorModeSwitch: false,
+        navbar: navbar,
         sidebarDepth: 0,
         editLink: false,
         contributors: false,
@@ -64,7 +66,7 @@ export default defineUserConfig({
         gitPlugin({
             createdTime: true,
             updatedTime: true,
-            contributors:true,
+            contributors: true,
         }),
     ]
 })
