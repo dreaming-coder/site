@@ -1,5 +1,5 @@
 <template>
-  <div class="toc-container-sidebar" v-if="showTocSidebar">
+  <div class="toc-container-sidebar">
     <div class="scroll-box">
       <div class="toc-title">
         {{ $page.title }}
@@ -20,12 +20,6 @@ export default {
   components: {
     TocItem
   },
-  computed: {
-    // 判断哪些页面需要显示目录
-    showTocSidebar() {
-      return (!this.$frontmatter || !this.$frontmatter.home) && this.$page.headers.length !== 0;
-    }
-  }
 
 }
 </script>

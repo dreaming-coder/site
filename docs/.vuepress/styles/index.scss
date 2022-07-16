@@ -1,16 +1,19 @@
-:root {
-  --content-width: 100%;
-}
 .theme-default-content:not(.custom) {
   max-width: 100%;
   margin: 0 auto;
   padding: 2rem 2.5rem;
 }
 
-.page {
+.page-with-toc {
   display: block;
   word-break: break-word;
   padding: 55px 295px 15px 20rem;
+  background: #f3f5f7;
+}
+.page-without-toc-sidebar {
+  display: block;
+  word-break: break-word;
+  padding: 55px 12px 15px 20rem;
   background: #f3f5f7;
 }
 
@@ -18,4 +21,11 @@
   margin-top: 14px;
   margin-left: 12px;
   background: #fff;
+}
+
+.page-nav {
+  padding-top: 1rem;
+  padding-bottom: 0;
+  background: #fff;
+  margin-left: 12px;
 }

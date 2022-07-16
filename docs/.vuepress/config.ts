@@ -6,6 +6,7 @@ import clipboardPlugin from "vuepress-plugin-clipboard";
 import {registerComponentsPlugin} from "@vuepress/plugin-register-components";
 import {gitPlugin} from "@vuepress/plugin-git";
 import navbar from "./navbar";
+import getSidebar from "./sidebar";
 
 export default defineUserConfig({
     lang: 'zh-CN',
@@ -23,6 +24,7 @@ export default defineUserConfig({
         colorMode: 'light',
         colorModeSwitch: false,
         navbar: navbar,
+        sidebar: getSidebar(),
         sidebarDepth: 0,
         editLink: false,
         contributors: false,

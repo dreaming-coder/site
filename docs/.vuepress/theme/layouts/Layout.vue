@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import Home from '@theme/Home.vue'
 import Navbar from '@theme/Navbar.vue'
-import Page from '@theme/Page.vue'
+import Page from '../components/Page.vue'
 import Sidebar from '@theme/Sidebar.vue'
-import { usePageData, usePageFrontmatter } from '@vuepress/client'
-import { computed, onMounted, onUnmounted, ref } from 'vue'
-import { useRouter } from 'vue-router'
-import type { DefaultThemePageFrontmatter } from '@vuepress/theme-default/lib/shared'
+import {usePageData, usePageFrontmatter} from '@vuepress/client'
+import {computed, onMounted, onUnmounted, ref} from 'vue'
+import {useRouter} from 'vue-router'
+import type {DefaultThemePageFrontmatter} from '@vuepress/theme-default/lib/shared'
 import PageSidebar from "../components/PageSidebar.vue"
 
 import {
@@ -19,6 +19,10 @@ const page = usePageData()
 const frontmatter = usePageFrontmatter<DefaultThemePageFrontmatter>()
 const themeLocale = useThemeLocaleData()
 
+const showTocSidebar = computed(
+    () => (!frontmatter || !frontmatter.value.home) && page.value.headers.length !== 0
+)
+
 // navbar
 const shouldShowNavbar = computed(
     () => frontmatter.value.navbar !== false && themeLocale.value.navbar !== false
@@ -30,7 +34,7 @@ const isSidebarOpen = ref(false)
 const toggleSidebar = (to?: boolean): void => {
   isSidebarOpen.value = typeof to === 'boolean' ? to : !isSidebarOpen.value
 }
-const touchStart = { x: 0, y: 0 }
+const touchStart = {x: 0, y: 0}
 const onTouchStart = (e): void => {
   touchStart.x = e.changedTouches[0].clientX
   touchStart.y = e.changedTouches[0].clientY
@@ -82,33 +86,32 @@ const onBeforeLeave = scrollPromise.pending
       @touchstart="onTouchStart"
       @touchend="onTouchEnd"
   >
-    <tt></tt>
     <slot name="navbar">
       <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar">
         <template #before>
-          <slot name="navbar-before" />
+          <slot name="navbar-before"/>
         </template>
         <template #after>
-          <slot name="navbar-after" />
+          <slot name="navbar-after"/>
         </template>
       </Navbar>
     </slot>
 
-    <div class="sidebar-mask" @click="toggleSidebar(false)" />
+    <div class="sidebar-mask" @click="toggleSidebar(false)"/>
 
     <slot name="sidebar">
       <Sidebar>
         <template #top>
-          <slot name="sidebar-top" />
+          <slot name="sidebar-top"/>
         </template>
         <template #bottom>
-          <slot name="sidebar-bottom" />
+          <slot name="sidebar-bottom"/>
         </template>
       </Sidebar>
     </slot>
 
     <slot name="page">
-      <Home v-if="frontmatter.home" />
+      <Home v-if="frontmatter.home"/>
 
       <Transition
           v-else
@@ -119,22 +122,20 @@ const onBeforeLeave = scrollPromise.pending
       >
         <Page :key="page.path">
           <template #top>
-            <slot name="page-top" />
+            <slot name="page-top"/>
           </template>
           <template #content-top>
-            <slot name="page-content-top" />
+            <slot name="page-content-top"/>
           </template>
           <template #content-bottom>
-            <slot name="page-content-bottom" />
+            <slot name="page-content-bottom"/>
           </template>
           <template #bottom>
-            <slot name="page-bottom" />
+            <slot name="page-bottom"/>
           </template>
         </Page>
       </Transition>
     </slot>
-    <page-sidebar>
-
-    </page-sidebar>
+    <page-sidebar v-if="showTocSidebar"></page-sidebar>
   </div>
 </template>
