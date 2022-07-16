@@ -7,6 +7,17 @@
   color: #42b983;
 }
 
+// 主页页脚样式
+.cover-footer {
+  width: var(--homepage-width);
+  display: grid;
+  grid-template-rows: 2em 2em 2em;
+  row-gap: 10px;
+  justify-items: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
 // 历史遗留的样式（代码太丑了）
 
 .mysql-overview {
