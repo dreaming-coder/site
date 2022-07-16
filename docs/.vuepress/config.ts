@@ -1,7 +1,6 @@
 import {path} from '@vuepress/utils'
 import {defineUserConfig} from 'vuepress'
 import {localTheme} from './theme'
-import navbar from "./navbar";
 import mdEnhancePlugin from "vuepress-plugin-md-enhance";
 import clipboardPlugin from "vuepress-plugin-clipboard";
 import {registerComponentsPlugin} from "@vuepress/plugin-register-components";
