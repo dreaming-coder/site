@@ -27,8 +27,10 @@ export default defineUserConfig({
         sidebar: getSidebar(),
         sidebarDepth: 0,
         editLink: false,
-        contributors: false,
-        lastUpdated: false,
+        contributors: true,
+        contributorsText: '作者',
+        lastUpdated: true,
+        lastUpdatedText: '上次更新'
     }),
     plugins: [
         mdEnhancePlugin({
