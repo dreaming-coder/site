@@ -1,0 +1,21 @@
+:root {
+  --content-width: 100%;
+}
+.theme-default-content:not(.custom) {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem 2.5rem;
+}
+
+.page {
+  display: block;
+  word-break: break-word;
+  padding: 55px 295px 15px 20rem;
+  background: #f3f5f7;
+}
+
+.page .theme-default-content {
+  margin-top: 14px;
+  margin-left: 12px;
+  background: #fff;
+}
