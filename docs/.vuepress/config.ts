@@ -4,7 +4,6 @@ import {localTheme} from './theme'
 import mdEnhancePlugin from "vuepress-plugin-md-enhance";
 import clipboardPlugin from "vuepress-plugin-clipboard";
 import {registerComponentsPlugin} from "@vuepress/plugin-register-components";
-// import {gitPlugin} from "@vuepress/plugin-git";
 import navbar from "./navbar";
 import getSidebar from "./sidebar";
 import copyrightPlugin from "vuepress-plugin-copyright2";
@@ -68,11 +67,6 @@ export default defineUserConfig({
         registerComponentsPlugin({
             componentsDir: path.resolve(__dirname, './components'),
         }),
-        // gitPlugin({
-        //     createdTime: true,
-        //     updatedTime: true,
-        //     contributors: true,
-        // }),
         // docsearchPlugin({
         //     apiKey:"",
         //     indexName:"",
