@@ -142,11 +142,13 @@ a.sidebar-item{
   padding: 2rem 2.5rem;
 }
 
-.page-with-toc {
-  display: block;
-  word-break: break-word;
-  padding: 55px 295px 15px 20rem;
-  background: #f3f5f7;
+@media screen and (min-width: 1200px){
+  .page-with-toc {
+    display: block;
+    word-break: break-word;
+    padding: 55px 295px 15px 20rem;
+    background: #f3f5f7;
+  }
 }
 
 .page-without-toc-sidebar {

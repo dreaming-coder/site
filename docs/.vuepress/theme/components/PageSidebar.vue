@@ -25,6 +25,7 @@ export default {
 </script>
 
 <style scoped>
+
 @media screen and (min-width: 1200px) {
   .toc-container-sidebar {
     display: block;
