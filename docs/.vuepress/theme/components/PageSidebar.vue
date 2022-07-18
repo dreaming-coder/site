@@ -37,15 +37,20 @@ export default {
     font-size: 12px;
     background: #fff;
   }
-  .scroll-box {
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
 
   .toc-title {
     font-size: small;
     font-weight: bolder;
     text-align: center;
+  }
+
+  .toc-box {
+    max-height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .toc-box::-webkit-scrollbar{
+    display: none;
   }
 
   hr {
