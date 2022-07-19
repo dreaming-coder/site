@@ -16,6 +16,8 @@ SPI 整体机制图如下：
 
 ## 2. SPI 机制的简单示例
 
+> 本部分代码见 [**java-demos-spi**](https://github.com/dreaming-coder/ice-java-demos/tree/main/java-demos-spi)。
+
 我们现在需要使用一个内容搜索接口，搜索的实现可能是基于文件系统的搜索，也可能是基于数据库的搜索。
 
 - 我们先定义好服务的接口
