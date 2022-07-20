@@ -157,6 +157,7 @@ function getSidebarForJava() {
                 '/md/java/java-annotation',
                 '/md/java/java-exception',
                 '/md/java/java-spi',
+                '/md/java/java-servlet',
             ],
         },
         {
