@@ -1,5 +1,7 @@
 # Spring 基础 - Spring MVC
 
+[[TOC]]
+
 ## 1. 什么是 MVC
 
 > MVC英文是Model View Controller，是模型(model)－视图(view)－控制器(controller)的缩写，一种软件设计规范。本质上也是一种解耦。

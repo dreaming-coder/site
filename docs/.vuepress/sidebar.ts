@@ -21,7 +21,7 @@ function getSideBarForSpring() {
                 '/md/spring/spring-ioc',
                 '/md/spring/spring-aop',
                 '/md/spring/spring-mvc',
-                '/md/spring/spring-mvc-java-config-demo',
+                '/md/spring/spring-mvc-java-config',
             ]
         }
     ]
