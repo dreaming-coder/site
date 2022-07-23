@@ -1,4 +1,4 @@
-# Mybatis - 配置文件
+# MyBatis - 配置文件
 
 > - **推荐命名为 mybatis-config.xml**
 >

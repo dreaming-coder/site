@@ -1,4 +1,4 @@
-# Mybatis - 入门
+# MyBatis - 入门
 ## 1. 什么是 Mybatis
 
 - MyBatis 是一款优秀的持久层框架
