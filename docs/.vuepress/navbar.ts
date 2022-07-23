@@ -102,7 +102,12 @@ let navbar = [
     },
     {
         text: '📌框架|中间件',
-        link: '/'
+        children: [
+            {
+                text: 'Mybatis 详解',
+                link: '/md/middleware/mybatis/mybatis-getting-started'
+            }
+        ]
     },
     {
         text: '💊内功',

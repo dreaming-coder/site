@@ -5,10 +5,23 @@ export default function getSidebar() {
         '/md/database/': getSidebarForDatabase(),
         '/md/web/': getSidebarForWeb(),
         '/md/spring/': getSideBarForSpring(),
+        '/md/middleware/': getSideBarForMiddleware(),
         '/md/foundation/': getSidebarForFoundation(),
         '/md/tools/': getSidebarForTools(),
         '/md/about/': getSidebarForAbout(),
     }
+}
+
+function getSideBarForMiddleware(){
+    return [
+        {
+            text: 'Mybatis',
+            children:[
+                '/md/middleware/mybatis/mybatis-getting-started',
+                '/md/middleware/mybatis/mybatis-configuration',
+            ]
+        }
+    ]
 }
 
 function getSideBarForSpring() {
