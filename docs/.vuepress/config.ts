@@ -8,6 +8,7 @@ import navbar from "./navbar";
 import getSidebar from "./sidebar";
 import copyrightPlugin from "vuepress-plugin-copyright2";
 
+
 export default defineUserConfig({
     lang: 'zh-CN',
     title: "ice's blog",
