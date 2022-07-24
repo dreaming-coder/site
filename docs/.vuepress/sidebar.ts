@@ -19,6 +19,7 @@ function getSideBarForMiddleware(){
             children:[
                 '/md/middleware/mybatis/mybatis-getting-started',
                 '/md/middleware/mybatis/mybatis-configuration',
+                '/md/middleware/mybatis/mybatis-mapper',
             ]
         }
     ]

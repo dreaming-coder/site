@@ -118,10 +118,10 @@ let navbar = [
             }
         ]
     },
-    {
-        text: '💯项目',
-        link: '/' // /md/projects
-    },
+    // {
+    //     text: '💯项目',
+    //     link: '/' // /md/projects
+    // },
     {
         text: '🔧工具|部署',
         children: [
