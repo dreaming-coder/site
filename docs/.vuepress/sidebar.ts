@@ -21,6 +21,7 @@ function getSideBarForMiddleware(){
                 '/md/middleware/mybatis/mybatis-configuration',
                 '/md/middleware/mybatis/mybatis-mapper',
                 '/md/middleware/mybatis/mybatis-cache',
+                '/md/middleware/mybatis/mybatis-generator',
             ]
         }
     ]
