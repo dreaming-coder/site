@@ -40,6 +40,12 @@ function getSideBarForSpring() {
                 '/md/spring/spring-mvc',
                 '/md/spring/spring-mvc-java-config',
             ]
+        },
+        {
+            text: 'SpringBoot (v2.7.x)',
+            children: [
+                '/md/spring/springboot/springboot-introduction',
+            ]
         }
     ]
 }
