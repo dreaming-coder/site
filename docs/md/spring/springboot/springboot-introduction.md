@@ -1,4 +1,4 @@
-# SpringBoot - 简介
+# SpringBoot 基础 - SpringBoot 简介
 
 > 本文转自 [SpringBoot入门 - SpringBoot简介](https://www.pdai.tech/md/spring/springboot/springboot-x-overview.html)
 
