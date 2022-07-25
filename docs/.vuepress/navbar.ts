@@ -90,11 +90,11 @@ let navbar = [
                 ]
             },
             {
-                text: 'SpringBoot (v)',
+                text: 'SpringBoot (v2.7.x)',
                 children: [
                     {
                         text: 'SpringBoot 入门',
-                        link: '/'
+                        link: '/md/spring/springboot/springboot-introduction'
                     }
                 ]
             }
