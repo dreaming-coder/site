@@ -45,6 +45,7 @@ function getSideBarForSpring() {
             text: 'SpringBoot (v2.7.x)',
             children: [
                 '/md/spring/springboot/springboot-introduction',
+                '/md/spring/springboot/springboot-hello-world',
             ]
         }
     ]

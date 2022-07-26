@@ -7,6 +7,7 @@ import {registerComponentsPlugin} from "@vuepress/plugin-register-components";
 import navbar from "./navbar";
 import getSidebar from "./sidebar";
 import copyrightPlugin from "vuepress-plugin-copyright2";
+import {docsearchPlugin} from "@vuepress/plugin-docsearch";
 
 
 export default defineUserConfig({
@@ -68,12 +69,12 @@ export default defineUserConfig({
         registerComponentsPlugin({
             componentsDir: path.resolve(__dirname, './components'),
         }),
-        // docsearchPlugin({
-        //     apiKey:"",
-        //     indexName:"",
-        //     appId:"",
-        //     placeholder:"搜索文档"
-        // }),
+        docsearchPlugin({
+            apiKey:"c496adeca046e3513121ddef0599dc01",
+            indexName:"e-thunder",
+            appId:"IOKB014S8Y",
+            placeholder:"搜索文档"
+        }),
         copyrightPlugin({
             hostname:"http://e-thunder.space",
             author:"ice",
