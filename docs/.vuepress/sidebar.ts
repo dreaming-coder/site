@@ -46,6 +46,7 @@ function getSideBarForSpring() {
             children: [
                 '/md/spring/springboot/springboot-introduction',
                 '/md/spring/springboot/springboot-hello-world',
+                '/md/spring/springboot/springboot-autoconfigure',
             ]
         }
     ]
