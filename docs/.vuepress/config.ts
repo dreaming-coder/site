@@ -70,7 +70,7 @@ export default defineUserConfig({
             componentsDir: path.resolve(__dirname, './components'),
         }),
         docsearchPlugin({
-            apiKey:"c496adeca046e3513121ddef0599dc01",
+            apiKey:"b00ef7fe898577737645859b8abd4e90",
             indexName:"e-thunder",
             appId:"IOKB014S8Y",
             placeholder:"搜索文档"
