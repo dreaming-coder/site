@@ -95,6 +95,10 @@ let navbar = [
                     {
                         text: 'SpringBoot 入门',
                         link: '/md/spring/springboot/springboot-introduction'
+                    },
+                    {
+                        text: 'SpringBoot 集成 MyBatis',
+                        link: '/md/spring/springboot/springboot-mybatis'
                     }
                 ]
             }
