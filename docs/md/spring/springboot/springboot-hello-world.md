@@ -1,5 +1,7 @@
 # SpringBoot 基础 - Hello World
 
+> 本文代码见 [**ice-springboot-hello-world**](https://github.com/dreaming-coder/ice-springboot-demos/tree/main/ice-springboot-hello-world)。
+
 > 这里对 MVC 架构进行了简化来演示示例，实际开发时应当遵守 MVC 分层操作。
 
 ## 1. 创建 SpringBoot Initializer
