@@ -48,6 +48,7 @@ function getSideBarForSpring() {
                 '/md/spring/springboot/springboot-hello-world',
                 '/md/spring/springboot/springboot-autoconfigure',
                 '/md/spring/springboot/springboot-test',
+                '/md/spring/springboot/springboot-devtool',
             ]
         }
     ]
