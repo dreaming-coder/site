@@ -97,6 +97,10 @@ let navbar = [
                         link: '/md/spring/springboot/springboot-introduction'
                     },
                     {
+                        text: 'SpringBoot 生成接口文档',
+                        link: '/md/spring/springboot/springboot-docs'
+                    },
+                    {
                         text: 'SpringBoot 集成 MyBatis',
                         link: '/md/spring/springboot/springboot-mybatis'
                     }
