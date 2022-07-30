@@ -50,6 +50,7 @@ function getSideBarForSpring() {
                 '/md/spring/springboot/springboot-test',
                 '/md/spring/springboot/springboot-devtool',
                 '/md/spring/springboot/springboot-banner',
+                '/md/spring/springboot/springboot-response',
                 '/md/spring/springboot/springboot-mybatis',
             ]
         }
