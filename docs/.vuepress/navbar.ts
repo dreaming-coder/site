@@ -105,6 +105,15 @@ let navbar = [
                         link: '/md/spring/springboot/springboot-mybatis'
                     }
                 ]
+            },
+            {
+                text: 'SpringCloud Alibaba (v2.2.x)',
+                children: [
+                    {
+                        text: 'SpringCloud Alibaba 入门',
+                        link: '/md/spring/springcloud/springcloud-demo'
+                    }
+                ]
             }
         ]
     },

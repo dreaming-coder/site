@@ -56,6 +56,12 @@ function getSideBarForSpring() {
                 '/md/spring/springboot/springboot-mybatis',
                 '/md/spring/springboot/springboot-starter',
             ]
+        },
+        {
+            text: 'SpringCloud Alibaba (v2.2.x)',
+            children: [
+                '/md/spring/springcloud/springcloud-demo'
+            ]
         }
     ]
 }
