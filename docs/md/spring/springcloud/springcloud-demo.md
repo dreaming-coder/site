@@ -165,7 +165,7 @@ public class StockController {
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-parent</artifactId>
-            <version>2.7.2</version>
+            <version>2.3.12.RELEASE</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
@@ -190,6 +190,8 @@ public class StockController {
 ```
 
 > 此时 `parent` 标签及其子标签可以删除了。
+
+> 注意版本匹配。
 
 此时环境就搭建好了，下面只要引入各自依赖就好。
 
