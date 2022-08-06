@@ -69,12 +69,6 @@ export default defineUserConfig({
         registerComponentsPlugin({
             componentsDir: path.resolve(__dirname, './components'),
         }),
-        docsearchPlugin({
-            apiKey:"b00ef7fe898577737645859b8abd4e90",
-            indexName:"e-thunder",
-            appId:"IOKB014S8Y",
-            placeholder:"搜索文档"
-        }),
         copyrightPlugin({
             hostname:"http://e-thunder.space",
             author:"ice",
