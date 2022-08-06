@@ -62,6 +62,7 @@ function getSideBarForSpring() {
             children: [
                 '/md/spring/springcloud/springcloud-demo',
                 '/md/spring/springcloud/springcloud-nacos',
+                '/md/spring/springcloud/springcloud-ribbon',
             ]
         }
     ]
