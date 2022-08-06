@@ -60,7 +60,8 @@ function getSideBarForSpring() {
         {
             text: 'SpringCloud Alibaba (v2.2.x)',
             children: [
-                '/md/spring/springcloud/springcloud-demo'
+                '/md/spring/springcloud/springcloud-demo',
+                '/md/spring/springcloud/springcloud-nacos',
             ]
         }
     ]
