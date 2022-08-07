@@ -141,11 +141,65 @@ public class StockController {
 
 重启所有服务，访问两次 http://127.0.0.1:8081/order/add，即可看到2个不同端口的返回结果。
 
-## 3.
+## 3. Nacos 配置中心
 
+### 3.1 在网页面板上配置
 
+![](/imgs/spring/springcloud/springcloud-nacos-10.png)
 
+**最佳实践**：
 
+- Namespace：代表不同**环境**，如开发、测试、生产环境。
 
+- Group：代表某**项目**，如XX医疗项目、XX电商项目
 
+- DataId：每个项目下往往有若干个**工程（微服务）**，每个配置集(DataId)是一个**工程（微服务）**的**主配置文件**
+
+![](/imgs/spring/springcloud/springcloud-nacos-11.png)
+
+如果要想启用权限管理，需要把配置Nacos 的 application.properties 进行开启：
+
+![](/imgs/spring/springcloud/springcloud-nacos-12.png)
+
+### 3.2 搭建 Nacos-config 服务
+
+> 通过 Nacos Server 和 spring-cloud-starter-alibaba-nacos-config 实现配置的动态变更
+
+引入依赖：
+
+```xml
+<dependency>
+    <groupId>com.alibaba.cloud</groupId>
+    <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+</dependency>
+```
+
+添加 bootstrap.yaml：
+
+```yaml
+spring:
+  application:
+    # 会自动根据服务名拉去dataid对应的配置文件。如果dataid跟服务名不一致，就需要手动指定dataid
+    name: config-service
+  cloud:
+    nacos:
+      server-addr: 118.25.151.78:8848
+      username: nacos
+      password: nacos
+      config:
+        # 启动之后如果一直打印日志，将namespace注掉
+        namespace: public
+```
+
+启动服务，测试微服务是否使用配置中心的配置：
+
+![](/imgs/spring/springcloud/springcloud-nacos-13.png)
+
+> 默认只能读取和服务名一样的配置文件的内容。
+
+### 3.3 Config 相关配置
+
+Nacos 数据模型 Key 由三元组唯一确定，Namespace 默认是空串，公共命名空间（public），分组默认是 DEFAULT_GROUP
+
+![](/imgs/spring/springcloud/springcloud-nacos-14.png)
 
