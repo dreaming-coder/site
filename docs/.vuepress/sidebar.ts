@@ -63,6 +63,7 @@ function getSideBarForSpring() {
                 '/md/spring/springcloud/springcloud-demo',
                 '/md/spring/springcloud/springcloud-nacos',
                 '/md/spring/springcloud/springcloud-ribbon',
+                '/md/spring/springcloud/springcloud-feign',
             ]
         }
     ]
