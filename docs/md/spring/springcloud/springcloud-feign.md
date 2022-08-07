@@ -107,7 +107,7 @@ public class FeignConfig {
 
 **如果希望进行局部配置，可以在 `@FeignClient` 注解中指定使用的配置类**：
 
-![](E:\site\docs\.vuepress\public\imgs\spring\springcloud\springcloud-feign-1.png)
+![](/imgs/spring/springcloud/springcloud-feign-1.png)
 
 **因为 spring Boot 默认的日志级别是 info，需要在 yaml 配置文件中执行 dubug 的日志级别才能正常输出日志**：
 
