@@ -202,6 +202,30 @@ function getSidebarForJava() {
                 '/md/java/java-servlet',
             ],
         },
+        // {
+        //     text: 'Java 集合框架',
+        //     children: [
+        //
+        //     ]
+        // },
+        {
+            text: 'Java 多线程与并发',
+            children: [
+
+            ]
+        },
+        {
+            text: 'Java 常用工具包',
+            children: [
+                '/md/java/tools/json/fastjson',
+            ]
+        },
+        // {
+        //     text: 'Java IO/NIO/AIO',
+        //     children: [
+        //
+        //     ]
+        // },
         {
             // isGroup: true,
             text: 'Java 8 特性',
@@ -214,6 +238,18 @@ function getSidebarForJava() {
                 '/md/java/java8/java8-repeatable',
             ],
         },
+        // {
+        //     text: 'Java 8 以上新特性',
+        //     children: [
+        //
+        //     ]
+        // },
+        // {
+        //     text: 'JVM 相关',
+        //     children: [
+        //
+        //     ]
+        // }
     ]
 }
 
