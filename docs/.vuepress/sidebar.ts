@@ -218,6 +218,7 @@ function getSidebarForJava() {
             text: 'Java 常用工具包',
             children: [
                 '/md/java/tools/json/fastjson',
+                '/md/java/tools/json/jackson',
             ]
         },
         // {
