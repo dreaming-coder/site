@@ -195,6 +195,7 @@ function getSidebarForJava() {
                 '/md/java/jdk-install',
                 '/md/java/java-basic',
                 '/md/java/java-oop',
+                '/md/java/java-enum',
                 '/md/java/java-generic',
                 '/md/java/java-annotation',
                 '/md/java/java-exception',
