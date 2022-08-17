@@ -130,26 +130,14 @@ public class Singleton {
 这是单例模式的最佳实践，它实现简单，并且在面对复杂的序列化或者反射攻击的时候，能够防止实例化多次。
 
 ```java
-public enum Singleton {
-    uniqueInstance;
-}
-```
-
-考虑以下单例模式的实现，该 `Singleton` 在每次序列化的时候都会创建一个新的实例，为了保证只创建一个实例，必须声明所有字段都是 `transient`，并且提供一个 `readResolve()` 方法。 
-
-```java
-public class Singleton implements Serializable {
-
-    private static Singleton uniqueInstance;
-
-    private Singleton() {
+public enum  Singleton {
+    INSTANCE;
+    private String name;
+    public String getName(){
+        return name;
     }
-
-    public static synchronized Singleton getUniqueInstance() {
-        if (uniqueInstance == null) {
-            uniqueInstance = new Singleton();
-        }
-        return uniqueInstance;
+    public void setName(String name){
+        this.name = name;
     }
 }
 ```
