@@ -130,16 +130,33 @@ public class Singleton {
 这是单例模式的最佳实践，它实现简单，并且在面对复杂的序列化或者反射攻击的时候，能够防止实例化多次。
 
 ```java
-public enum  Singleton {
-    INSTANCE;
-    private String name;
-    public String getName(){
-        return name;
+public enum DBPool {
+    CONNECTION;
+
+    private DBConnection connection = null;
+
+    private DBPool() {
+        this.connection = new DBConnection("127.0.0.1", "3306");
     }
-    public void setName(String name){
-        this.name = name;
+
+    public void getSession(){
+        this.connection.getSession();
     }
 }
+```
+
+```java
+public class Demo08 {
+    public static void main(String[] args) {
+        DBPool.CONNECTION.getSession();
+    }
+}
+```
+
+输出结果：
+
+```
+127.0.0.1:3306
 ```
 
 如果不使用枚举来实现单例模式，会出现反射攻击，因为通过 `setAccessible()` 方法可以将私有构造函数的访问级别设置为 `public`，然后调用构造函数从而实例化对象。如果要防止这种攻击，需要在构造函数中添加防止实例化第二个对象的代码。 
