@@ -213,7 +213,7 @@ function getSidebarForJava() {
         {
             text: 'Java 多线程与并发',
             children: [
-
+                '/md/java/concurrent/overview',
             ]
         },
         {
